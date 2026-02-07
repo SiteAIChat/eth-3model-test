@@ -1,0 +1,43 @@
+---
+const { items = [] } = Astro.props;
+---
+
+<section id="contact" class="py-24 lg:py-32 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="space-y-8">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          Free Interactive Tech Checklist
+        </h2>
+        <p class="text-lg text-blue-100 leading-relaxed">
+          Click The Button Below To Receive The Invite Via Messenger
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-primary bg-white hover:bg-gray-50 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+        >
+          Get Your Free Checklist
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="relative">
+          <div class="absolute -inset-4 bg-white/10 rounded-3xl rotate-3"></div>
+          <img
+            src="https://essentialtechhelp.com/wp-content/uploads/2023/01/product-opt-in@2x.png"
+            alt="Free tech checklist"
+            class="relative rounded-3xl shadow-2xl w-full max-w-md"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

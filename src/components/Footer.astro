@@ -1,0 +1,56 @@
+---
+const { items = [] } = Astro.props;
+
+const links = [
+  { label: "Services", href: "#services" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Security", href: "#security" },
+  { label: "Contact", href: "#contact" },
+];
+---
+
+<footer class="bg-gray-900 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="space-y-4">
+        <img
+          src="https://essentialtechhelp.com/wp-content/uploads/2023/01/Essential-Tech-Help-Logo-500-%C3%97-150-px.png"
+          alt="Essential Tech Help"
+          class="h-10 w-auto brightness-200"
+        />
+        <p class="text-sm leading-relaxed max-w-xs">
+          Focus on Building Your Business and let us deal with the necessary but often time consuming tech related hassles.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+        <nav aria-label="Footer navigation">
+          <ul class="space-y-3">
+            {links.map((link) => (
+              <li>
+                <a href={link.href} class="text-sm hover:text-primary transition-colors duration-200">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Get In Touch</h3>
+        <a
+          href="#contact"
+          class="inline-flex items-center px-6 py-3 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
+        >
+          Book A Call
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+      <p class="text-sm">&copy; {new Date().getFullYear()} Essential Tech Help. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

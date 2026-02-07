@@ -1,0 +1,43 @@
+---
+const { items = [] } = Astro.props;
+---
+
+<section class="py-24 lg:py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="space-y-8">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          Do What You Do Best
+          <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            We'll Handle The Rest
+          </span>
+        </h2>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          You don't need to waste your time banging your head against a wall trying to figure out how to get your technology to work together. We supply the tools and support you need at a low monthly price.
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:shadow-primary/25 hover:-translate-y-0.5 transition-all duration-300"
+        >
+          Get Started Today
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="relative flex justify-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl rotate-3 scale-105 blur-sm"></div>
+        <img
+          src="https://essentialtechhelp.com/wp-content/uploads/2023/01/4-1.png"
+          alt="Essential Tech Help services"
+          class="relative rounded-3xl shadow-2xl w-full max-w-lg"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
