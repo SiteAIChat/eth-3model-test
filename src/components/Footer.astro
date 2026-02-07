@@ -1,0 +1,41 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-dark text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Brand -->
+      <div class="space-y-4">
+        <img class="h-10 w-auto brightness-0 invert" src="https://essentialtechhelp.com/wp-content/uploads/2023/01/Essential-Tech-Help-Logo-500-%C3%97-150-px.png" alt="Essential Tech Help" />
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Focus on Building Your Business and let us deal with the necessary but often time consuming tech related hassles.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-primary">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="#how-it-helps" class="text-gray-400 hover:text-white transition-colors">How It Helps</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+          <li><a href="#showcase" class="text-gray-400 hover:text-white transition-colors">Our Work</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-primary">Get Started</h3>
+        <p class="text-gray-400 mb-4">Ready to streamline your tech?</p>
+        <a href="#contact" class="inline-block bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
+          Book A Call
+        </a>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+      <p>&copy; {currentYear} Essential Tech Help. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

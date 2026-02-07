@@ -1,0 +1,47 @@
+---
+const links = [
+  { href: "#how-it-helps", label: "How It Helps" },
+  { href: "#services", label: "Services" },
+  { href: "#showcase", label: "Our Work" },
+  { href: "#security", label: "Security" },
+  { href: "#blog", label: "Blog" },
+];
+---
+
+<header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="flex items-center">
+          <img class="h-10 w-auto" src="https://essentialtechhelp.com/wp-content/uploads/2023/01/Essential-Tech-Help-Logo-500-%C3%97-150-px.png" alt="Essential Tech Help" />
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8">
+        {links.map((link) => (
+          <a href={link.href} class="text-gray-600 hover:text-primary font-medium transition-colors duration-200">
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center">
+        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium transition-colors duration-200 shadow-lg shadow-blue-500/30">
+          Book A Call
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button (Placeholder for simplicity, can be expanded) -->
+      <div class="md:hidden flex items-center">
+        <button class="text-gray-600 hover:text-primary p-2">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

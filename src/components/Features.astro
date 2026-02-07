@@ -1,0 +1,42 @@
+---
+const features = [
+  {
+    title: "Reliable Offsite Backup",
+    description: "Data backup is important for small business owners to invest in because it ensures that their important data is protected and can be easily restored in the event of a disaster or other data loss event. Having a good backup strategy in place can help minimize the impact of data loss on a business and get it back up and running quickly.",
+    icon: "https://essentialtechhelp.com/wp-content/uploads/2023/01/2-1.png" // Assumed mapping
+  },
+  {
+    title: "Cyber Security? We've Got Your Back",
+    description: "Antivirus and other cyber security software is important for small business owners to invest in because it protects their computers and network from malware and other cyber threats. This can help prevent data loss, network outages, and other problems that can harm a business.",
+    icon: "https://essentialtechhelp.com/wp-content/uploads/2023/01/4-1.png" // Assumed mapping
+  },
+  {
+    title: "Do What You Do Best We'll Handle The Rest",
+    description: "You don’t need to waste your time banging your head against a wall trying to figure out how to get your technology to work together. We supply the tools and support you need at a low monthly price.",
+    icon: "https://essentialtechhelp.com/wp-content/uploads/2023/01/1.png" // Assumed mapping
+  }
+];
+---
+
+<section id="services" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Do What You Do Best We'll Handle The Rest</h2>
+      <p class="text-xl text-gray-600">Comprehensive tech solutions for your peace of mind</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {features.map((feature) => (
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+            <img src={feature.icon} alt={feature.title} class="w-12 h-12 object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-dark mb-4">{feature.title}</h3>
+          <p class="text-gray-600 leading-relaxed text-sm">
+            {feature.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
