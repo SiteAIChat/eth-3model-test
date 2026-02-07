@@ -1,0 +1,33 @@
+---
+const { items = [] } = Astro.props;
+---
+
+<section id="checklist" class="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="grid gap-8 lg:grid-cols-12">
+    <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-100 lg:col-span-7">
+      <h2 class="text-3xl font-extrabold text-slate-900">Latest Blog Posts</h2>
+      <p class="mt-4 text-base leading-7 text-slate-600">Latest Blog Posts</p>
+      <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200">
+        <img src="https://essentialtechhelp.com/wp-content/uploads/2023/01/4-1.png" alt="" class="h-auto w-full transition-transform duration-500 hover:scale-105" loading="lazy" />
+      </div>
+    </article>
+
+    <article class="relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-primary to-secondary p-8 text-white shadow-2xl shadow-primary/20 lg:col-span-5">
+      <h2 class="text-3xl font-extrabold">Free Interactive Tech Checklist</h2>
+      <p class="mt-5 text-base leading-7 text-white/95">Click The Button Below To Receive The Invite Via Messenger</p>
+      <a
+        href="#"
+        aria-label="Open tech checklist invite"
+        class="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-slate-900 transition-transform duration-300 hover:-translate-y-0.5"
+      >
+        Free Interactive Tech Checklist
+      </a>
+      <img
+        src="https://essentialtechhelp.com/wp-content/uploads/2023/01/product-opt-in@2x.png"
+        alt=""
+        class="mt-8 h-auto w-full rounded-2xl"
+        loading="lazy"
+      />
+    </article>
+  </div>
+</section>

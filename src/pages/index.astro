@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import HowItHelps from '../components/HowItHelps.astro';
+import ServiceSections from '../components/ServiceSections.astro';
+import BlogAndChecklist from '../components/BlogAndChecklist.astro';
+import Footer from '../components/Footer.astro';
+
+const navItems = [
+  { label: 'How Does Essential Tech Help?', href: '#how' },
+  { label: 'Reliable Offsite Backup..', href: '#how' },
+  { label: 'Free Interactive Tech Checklist', href: '#checklist' }
+];
+---
+
+<BaseLayout title="Essential Tech Help">
+  <div class="min-h-screen bg-gradient-to-b from-white via-slate-50/50 to-white">
+    <Header items={navItems} />
+    <main>
+      <Hero items={[]} />
+      <HowItHelps items={[]} />
+      <ServiceSections items={[]} />
+      <BlogAndChecklist items={[]} />
+    </main>
+    <Footer items={[]} />
+  </div>
+</BaseLayout>

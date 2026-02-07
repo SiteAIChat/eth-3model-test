@@ -1,0 +1,37 @@
+---
+const { items = [] } = Astro.props;
+---
+
+<header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/85 backdrop-blur-lg">
+  <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <a href="#top" aria-label="Essential Tech Help Home" class="group inline-flex items-center">
+      <img
+        src="https://essentialtechhelp.com/wp-content/uploads/2023/01/Essential-Tech-Help-Logo-500-%C3%97-150-px.png"
+        alt=""
+        class="h-10 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
+        loading="lazy"
+      />
+    </a>
+    <nav aria-label="Main Navigation" class="hidden items-center gap-6 md:flex">
+      {
+        items.map((item) => (
+          <a href={item.href} class="text-sm font-semibold text-slate-700 transition-colors duration-300 hover:text-primary">
+            {item.label}
+          </a>
+        ))
+      }
+      <a
+        href="#checklist"
+        class="rounded-full bg-gradient-to-r from-primary to-secondary px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-transform duration-300 hover:-translate-y-0.5"
+      >
+        GET STARTED
+      </a>
+    </nav>
+    <a
+      href="#checklist"
+      class="rounded-full bg-gradient-to-r from-primary to-secondary px-4 py-2 text-sm font-semibold text-white md:hidden"
+    >
+      Book A Call
+    </a>
+  </div>
+</header>
